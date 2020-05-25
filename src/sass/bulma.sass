@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap')
+
+
+$blue: hsl(217, 71%, 53%);
+$cyan: hsl(204, 71%, 53%);
+$primary: $blue;
+$success: $blue;
+$link: $cyan;
+$background : #FFF;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Open Sans', sans-serif;
+
+$size-6: 0.9rem
+
+// Update some of Bulma's component variables
+$control-border-width: 2px;
+
+// Customize Bulma input 
+$control-border-width: 1px;
+$input-shadow: none;
+$label-weight: 400;
+$radius: 0px;
+
+
+
+
+// Import only what you need from Bulma
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/layout/_all.sass";
+@import "../../node_modules/bulma/sass/grid/_all.sass";
+
+
+// Social Login Colors
+$facebook-brand-color: #3b5999
+$google-brand-color: #dd4b39
+$twitter-brand-color: #55acee
+$phone-brand-color: #4dc247
+
+
+.has-background-facebook
+    background-color: $facebook-brand-color
+.has-background-google
+    background-color: $google-brand-color
+.has-background-twitter
+    background-color: $twitter-brand-color
+.has-background-phone
+    background-color: $phone-brand-color
+
+
+.is-borderless
+    border: none;
+.is-circle
+    border-radius: 15%; 
